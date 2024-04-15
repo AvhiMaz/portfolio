@@ -25,7 +25,7 @@ export default function Contacts() {
   return (
     <>
       <Navigation />
-      <div className="max-w-5xl mx-auto px-8 flex items-center justify-center min-h-screen">
+      <div className="max-w-5xl mx-auto px-8 flex md:mt-20 mt-10 items-center justify-center min-h-screen">
         <HoverEffect items={blogs} />
       </div>
     </>
