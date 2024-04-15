@@ -22,9 +22,6 @@ export const metadata: Metadata = {
     },
   },
 
-  icons: {
-    shortcut: "/favicon.png",
-  },
 };
 const inter = Inter({
   subsets: ["latin"],

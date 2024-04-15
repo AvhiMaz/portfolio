@@ -8,14 +8,14 @@ const projects = [
     title: "Portfolio",
     description:
       "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
-    link: "",
+    link: "https://avhimaz.vercel.app/",
     date: "",
   },
   {
     title: "Blogging App",
     description:
       "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
-    link: "https://github.com/AvhiMaz/hashnode-headless-CMS",
+    link: "https://github.com/AvhiMaz/blog-website",
     date: "",
   },
   {
