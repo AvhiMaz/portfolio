@@ -25,7 +25,7 @@ export default function Contacts() {
   return (
     <>
       <Navigation />
-      <div className="max-w-5xl mx-auto px-8 flex md:mt-20 mt-10 items-center justify-center min-h-screen">
+      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 mx-auto px-8 flex sm:p-20 items-center justify-center min-h-screen">
         <HoverEffect items={blogs} />
       </div>
     </>
