@@ -5,6 +5,13 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 const blogs = [
   {
+    title: "Understanding Arrays and Array Methods in JavaScript",
+    description:
+      "Arrays in JavaScript are like containers that can hold different types of data, such as numbers, strings...",
+    link: "https://avhimaz.hashnode.dev/understanding-arrays-and-array-methods-in-javascript",
+    date: "18 Apr 2024",
+  },
+  {
     title: "Easy Guide to Installing Arch Linux with archinstall Script",
     description:
       "Are you interested in trying out Arch Linux but feeling unsure about the installation process? Don't worry! With...",
@@ -14,7 +21,7 @@ const blogs = [
   {
     title: "Why I switch to arch linux",
     description:
-      "Hey there! So, It is almost a year I switch to Arch Linux, and let me tell you, it's been quite the journey. I wanted to share with you why I decided to take the...",
+      "Hey there! So, It is almost a year I switch to Arch Linux, and let me tell you, it's been quite the journey...",
     link: "https://avhimaz.hashnode.dev/why-i-switch-to-arch-linux",
     date: "14 Apr 2024",
   },
