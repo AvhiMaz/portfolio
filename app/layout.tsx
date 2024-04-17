@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     default: "AvhiMaz",
     template: "",
   },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
   description: "",
   robots: {
     index: true,
