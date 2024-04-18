@@ -32,19 +32,18 @@ const projects = [
     link: "https://links-junction.vercel.app/",
     date: "",
   },
-
-  {
-    title: "CNCF",
-    description:
-      "Worked with the CNCF and Argo CD project to make error messages better. This helps people find and fix problems more easily. My work made the project stronger and better at handling errors.",
-    link: "https://github.com/argoproj/argo-cd/pull/15059",
-    date: "",
-  },
   {
     title: "Brew Setup Installer",
     description:
       "The brew-setup.sh script is designed to detect the Linux distribution type (Arch-based, Debian-based) and execute the appropriate commands for installing Homebrew.",
     link: "https://github.com/AvhiMaz/brew-setup",
+    date: "",
+  },
+  {
+    title: "Weather App",
+    description:
+      "A website using HTML, CSS, JavaScript that fetches weather data from an API and displays the current weather conditions.",
+    link: "https://github.com/AvhiMaz/Weather-App",
     date: "",
   },
 ];
