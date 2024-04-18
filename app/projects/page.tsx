@@ -8,7 +8,7 @@ const projects = [
     title: "Portfolio",
     description:
       "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
-    link: "https://avhimaz.vercel.app/",
+    link: "https://www.avhimaz.in/",
     date: "",
     skill: "Skills: Nextjs, Tailwind, TypeScript, Git.",
   },
