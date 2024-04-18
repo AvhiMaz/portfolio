@@ -10,6 +10,7 @@ const blogs = [
       "Arrays in JavaScript are like containers that can hold different types of data, such as numbers, strings...",
     link: "https://avhimaz.hashnode.dev/understanding-arrays-and-array-methods-in-javascript",
     date: "18 Apr 2024",
+    skill: "",
   },
   {
     title: "Easy Guide to Installing Arch Linux with archinstall Script",
@@ -17,6 +18,7 @@ const blogs = [
       "Are you interested in trying out Arch Linux but feeling unsure about the installation process? Don't worry! With...",
     link: "https://avhimaz.hashnode.dev/easy-guide-to-installing-arch-linux-with-archinstall-script",
     date: "15 Apr 2024",
+    skill: "",
   },
   {
     title: "Why I switch to arch linux",
@@ -24,6 +26,7 @@ const blogs = [
       "Hey there! So, It is almost a year I switch to Arch Linux, and let me tell you, it's been quite the journey...",
     link: "https://avhimaz.hashnode.dev/why-i-switch-to-arch-linux",
     date: "14 Apr 2024",
+    skill: "",
   },
   
 ];

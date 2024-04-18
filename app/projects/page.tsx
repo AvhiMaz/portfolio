@@ -10,6 +10,7 @@ const projects = [
       "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
     link: "https://avhimaz.vercel.app/",
     date: "",
+    skill: "Skills: Nextjs, Tailwind, TypeScript, Git.",
   },
   {
     title: "Blogging App",
@@ -17,6 +18,7 @@ const projects = [
       "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
     link: "https://github.com/AvhiMaz/blog-website",
     date: "",
+    skill: "Skills: Nextjs, Tailwind, TypeScript, Hashnode Headless CMS, Git.",
   },
   {
     title: "Fitnesspergram",
@@ -24,6 +26,7 @@ const projects = [
       "FitnessPerGram's startup website: your destination for healthy food delivery. Discover our nutritious and delicious meals, crafted to support your fitness journey, all conveniently delivered to your doorstep.",
     link: "https://fitnesspergram.vercel.app/",
     date: "",
+    skill: "Skills: Reactjs, Tailwind, JavaScript, Git.",
   },
   {
     title: "Link Juntion",
@@ -31,6 +34,7 @@ const projects = [
       "LinkTree-inspired project: A minimalist solution for sharing multiple links effortlessly. Simplify your online presence and make navigation a breeze for your audience.",
     link: "https://links-junction.vercel.app/",
     date: "",
+    skill: "Skills: Reactjs, Tailwind, JavaScript, Git.",
   },
   {
     title: "Brew Setup Installer",
@@ -38,6 +42,7 @@ const projects = [
       "The brew-setup.sh script is designed to detect the Linux distribution type (Arch-based, Debian-based) and execute the appropriate commands for installing Homebrew.",
     link: "https://github.com/AvhiMaz/brew-setup",
     date: "",
+    skill: "Skills: Bash Scripting, Git.",
   },
   {
     title: "Weather App",
@@ -45,6 +50,15 @@ const projects = [
       "A website using HTML, CSS, JavaScript that fetches weather data from an API and displays the current weather conditions.",
     link: "https://github.com/AvhiMaz/Weather-App",
     date: "",
+    skill: "Skills: HTML, CSS, JavaScript, APIs, Git.",
+  },
+  {
+    title: "Password Generator",
+    description:
+      "A Bash script which is designed to generates a random alphanumeric password of a specified length. ",
+    link: "https://github.com/AvhiMaz/password-generator-using-bash",
+    date: "",
+    skill: "Skills: Bash, Git.",
   },
 ];
 
