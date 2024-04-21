@@ -27,7 +27,7 @@ const projects = [
     title: "Fitnesspergram",
     description:
       "FitnessPerGram's startup website: your destination for healthy food delivery. Discover our nutritious and delicious meals, crafted to support your fitness journey, all conveniently delivered to your doorstep.",
-    link: "https://fitnesspergram.store/",
+    link: "https://www.fitnesspergram.in/",
     date: "",
     skill: "Skills: Reactjs, Tailwind, JavaScript, Git.",
   },

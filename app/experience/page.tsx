@@ -37,14 +37,6 @@ const ContactsNavigation: React.FC = () => {
         "Skills: Golang, Dockers, Kubernetes, Argo-CD, Linux, Git & GitHub.",
     },
     {
-      title: "Internship at Bharat Intern",
-      description:
-        "At Bharat Intern, I independently tackled web development projects, refining my skills and gaining practical experience. This opportunity was instrumental in shaping my capabilities as a web developer.",
-      link: "https://drive.google.com/file/d/11d1aB2AnxEwWdu9V1PHjFTJaJCEU3dbK/view?usp=sharing",
-      date: "Nov 2023 - Dec 2023",
-      skill: "Skills: HTML, CSS, JavaScript",
-    },
-    {
       title: "Leetcode",
       description:
         "Completed 200+ Leetcode questions, significantly enhancing problem-solving abilities and sharpening critical thinking skills.",
