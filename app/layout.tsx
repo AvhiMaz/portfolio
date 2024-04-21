@@ -6,7 +6,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "AvhiMaz",
+    default: "avhimaz.in",
     template: "",
   },
   icons: {
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
 };
 const inter = Inter({
   subsets: ["latin"],
@@ -46,10 +45,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body
-        className="bg-black">
-        {children}
-      </body>
+      <body className="bg-black">{children}</body>
     </html>
   );
 }
