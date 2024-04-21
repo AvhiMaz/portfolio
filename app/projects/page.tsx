@@ -1,7 +1,10 @@
-"use client";
-
+import { Metadata } from "next";
 import { Navigation } from "../components/nav";
 import { HoverEffect } from "../components/ui/card-hover-effect";
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 const projects = [
   {

@@ -7,12 +7,30 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   title: {
     default: "avhimaz.in",
-    template: "",
+    template: "%s | avhimaz.in",
   },
   icons: {
     shortcut: "/favicon.ico",
   },
-  description: "",
+  description:
+    "Welcome to the portfolio of Avhi Mazumder. Explore my projects, blogs, skills and experiences in development, design, and more.",
+  openGraph: {
+    title: "avhimaz.in",
+    description:
+      "Welcome to the portfolio of Avhi Mazumder. Explore my projects, blogs, skills and experiences in development, design, and more.",
+    url: "https://avhimaz.in",
+    siteName: "avhimaz.in",
+    images: [
+      {
+        url: "https://avhimaz.in/og.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+
+    locale: "en-US",
+    type: "website",
+  },
   robots: {
     index: true,
     follow: true,
@@ -23,6 +41,10 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  twitter: {
+    title: "Avhi_Maz",
+    card: "summary_large_image",
   },
 };
 const inter = Inter({

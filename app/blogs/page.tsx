@@ -1,7 +1,10 @@
-"use client";
-
+import { Metadata } from "next";
 import { Navigation } from "../components/nav";
 import { HoverEffect } from "../components/ui/card-hover-effect";
+
+export const metadata: Metadata = {
+  title: "Blogs",
+};
 
 const blogs = [
   {
@@ -28,7 +31,6 @@ const blogs = [
     date: "14 Apr 2024",
     skill: "",
   },
-  
 ];
 
 export default function Contacts() {

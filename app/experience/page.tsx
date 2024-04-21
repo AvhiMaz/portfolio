@@ -33,7 +33,8 @@ const ContactsNavigation: React.FC = () => {
         "Worked with the CNCF and Argo CD project to make error messages better. This helps people find and fix problems more easily. My work made the project stronger and better at handling errors.",
       link: "https://github.com/argoproj/argo-cd/pull/15059",
       date: "Aug 2023 - Aug 2023",
-      skill: "Skills: Golang, Dockers, Kubernetes, Argo-CD, Linux, Git & GitHub.",
+      skill:
+        "Skills: Golang, Dockers, Kubernetes, Argo-CD, Linux, Git & GitHub.",
     },
     {
       title: "Internship at Bharat Intern",

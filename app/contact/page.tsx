@@ -1,8 +1,12 @@
-"use client";
 import { Github, Instagram, Linkedin, Mail, Send, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const socials = [
   {
