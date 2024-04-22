@@ -19,7 +19,7 @@ const socials = [
     icon: <Mail size={20} />,
     href: "mailto:dev@avhimaz.in",
     label: "Email",
-    handle: "avhimazumder5@gmail.com",
+    handle: "dev@avhimaz.in",
   },
   {
     icon: <Github size={20} />,
