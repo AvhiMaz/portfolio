@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to the portfolio of Avhi Mazumder. Explore my projects, blogs, skills and experiences in development, design, and more.",
   openGraph: {
-    title: "avhimaz.in",
+    title: "https://avhimaz.in",
     description:
       "Welcome to the portfolio of Avhi Mazumder. Explore my projects, blogs, skills and experiences in development, design, and more.",
     url: "https://avhimaz.in",
