@@ -3,8 +3,10 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import ogImage from "../app/opengraph-image.png";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://avhimaz.in"),
   title: {
     default: "avhimaz.in",
     template: "%s | avhimaz.in",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
     siteName: "avhimaz.in",
     images: [
       {
-        url: "https://avhimaz.in/og.png",
-        width: 1920,
-        height: 1080,
+        url: "https://avhimaz.in.opengraph-image.png",
+        width: ogImage.width,
+        height: ogImage.height,
       },
     ],
 
@@ -45,6 +47,14 @@ export const metadata: Metadata = {
   twitter: {
     title: "Avhi_Maz",
     card: "summary_large_image",
+
+    images: [
+      {
+        url: "https://avhimaz.in.opengraph-image.png",
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
   },
 };
 const inter = Inter({
