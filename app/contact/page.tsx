@@ -17,7 +17,7 @@ const socials = [
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:avhimazumder5@gmail.com",
+    href: "mailto:dev@avhimaz.in",
     label: "Email",
     handle: "avhimazumder5@gmail.com",
   },
