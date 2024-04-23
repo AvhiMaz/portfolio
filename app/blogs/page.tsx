@@ -1,45 +1,66 @@
-import { Metadata } from "next";
+import Link from "next/link";
 import { Navigation } from "../components/nav";
-import { HoverEffect } from "../components/ui/card-hover-effect";
+import { Card } from "../components/card";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blogs",
 };
 
-const blogs = [
+const socials = [
   {
-    title: "Understanding Arrays and Array Methods in JavaScript",
-    description:
-      "Arrays in JavaScript are like containers that can hold different types of data, such as numbers, strings...",
-    link: "https://avhimaz.hashnode.dev/understanding-arrays-and-array-methods-in-javascript",
-    date: "18 Apr 2024",
-    skill: "",
+    href: "https://avhimaz.hashnode.dev/understanding-arrays-and-array-methods-in-javascript",
+    label: "18 Apr 2024",
+    handle: "Understanding Arrays and Array Methods in JavaScript",
+    des: "Arrays in JavaScript are like containers that can hold different types of data, such as numbers, strings...",
   },
   {
-    title: "Easy Guide to Installing Arch Linux with archinstall Script",
-    description:
-      "Are you interested in trying out Arch Linux but feeling unsure about the installation process? Don't worry! With...",
-    link: "https://avhimaz.hashnode.dev/easy-guide-to-installing-arch-linux-with-archinstall-script",
-    date: "15 Apr 2024",
-    skill: "",
+    href: "https://avhimaz.hashnode.dev/easy-guide-to-installing-arch-linux-with-archinstall-script",
+    label: "15 Apr 2024",
+    handle: "Easy Guide to Installing Arch Linux with archinstall Script",
+    des: "Are you interested in trying out Arch Linux but feeling unsure about the installation process? Don't worry! With...",
   },
   {
-    title: "Why I switch to arch linux",
-    description:
-      "Hey there! So, It is almost a year I switch to Arch Linux, and let me tell you, it's been quite the journey...",
-    link: "https://avhimaz.hashnode.dev/why-i-switch-to-arch-linux",
-    date: "14 Apr 2024",
-    skill: "",
+    href: "https://avhimaz.hashnode.dev/why-i-switch-to-arch-linux",
+    label: "14 Apr 2024",
+    handle: "Why I switch to arch linux",
+    des: "Hey there! So, It is almost a year I switch to Arch Linux, and let me tell you, it's been quite the journey...",
   },
 ];
 
-export default function Contacts() {
+export default function Example() {
   return (
-    <>
+    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
-      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 mx-auto px-8 flex sm:p-20 items-center justify-center min-h-screen">
-        <HoverEffect items={blogs} />
+      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
+          {socials.map((s) => (
+            <Card>
+              <Link
+                href={s.href}
+                target="_blank"
+                className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+              >
+                <span
+                  className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
+                  aria-hidden="true"
+                />
+                <div className="z-10 flex flex-col items-center">
+                  <span className="lg:text-xl text-center font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+                    {s.handle}
+                  </span>
+                  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                    {s.label}{" "}
+                  </span>
+                  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                    {s.des}
+                  </span>
+                </div>
+              </Link>
+            </Card>
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 }

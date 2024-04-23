@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import { HoverBorderGradientDemo } from "./components/button";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -41,29 +42,9 @@ export default function Home() {
           that solves problems and enhances user experiences with creativity and
           precision.
         </h2>
-        <div className="mt-10">
+        <div className="">
           <Link href="/experience">
-            <button
-              type="button"
-              className="text-white bg-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              My Experiences & Achievements
-              <svg
-                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </button>
+            <HoverBorderGradientDemo />
           </Link>
         </div>
       </div>
