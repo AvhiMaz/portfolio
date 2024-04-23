@@ -15,7 +15,7 @@ const socials = [
     des: "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
   },
   {
-    href: "https://github.com/AvhiMaz/blog-website",
+    href: "https://blogs-avhimaz.vercel.app/",
     label: "Next.js, Tailwind, TypeScript, Headless CMS",
     handle: "Blogging App",
     des: "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
