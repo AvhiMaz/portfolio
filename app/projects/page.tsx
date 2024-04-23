@@ -21,7 +21,7 @@ const socials = [
     des: "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
   },
   {
-    href: "https://www.fitnesspergram.vercel.app/",
+    href: "https://fitnesspergramstore.vercel.app/",
     label: "Next.js, Tailwind, TypeScript",
     handle: "Fitnesspergram",
     des: "FitnessPerGram's startup website: your destination for healthy food delivery. Discover our nutritious and delicious meals, crafted to support your fitness journey, all conveniently delivered to your doorstep.",
