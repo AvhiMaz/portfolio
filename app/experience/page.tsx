@@ -13,14 +13,14 @@ const socials = [
     label: "Nov 2023 - Present",
     handle: "Lead @OWASP",
     des: "Led the OWASP (Open Web Application Security Project) local chapter, orchestrating efforts to advance cybersecurity awareness and practices within the community.",
-    skills: "Skills: Leadership, Communication, Teamwork, Cybersecurity",
+    skills: "Leadership, Communication, Teamwork, Cybersecurity",
   },
   {
     href: "https://github.com/argoproj/argo-cd/pull/15059",
     label: "Aug 2023 - Aug 2023",
     handle: "Contribution In CNCF",
     des: "Worked with the CNCF and Argo CD project to make error messages better. This helps people find and fix problems more easily. My work made the project stronger and better at handling errors.",
-    skills: "Skills: Golang, Docker, Kubernetes, Argo-CD, Linux, Git & Github",
+    skills: "Golang, Docker, Kubernetes, Argo-CD, Linux, Git & Github",
   },
   {
     href: "https://leetcode.com/Avhi_Maz/",
@@ -78,8 +78,8 @@ export default function Example() {
                     {s.label}{" "}
                   </span>
                   <div className="z-10 flex flex-col items-center">
-                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                      {s.skills}
+                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 underline">
+                      Skills: {s.skills}
                     </span>
                   </div>
 
