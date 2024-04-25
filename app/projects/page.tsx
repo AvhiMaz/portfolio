@@ -71,7 +71,7 @@ export default function Example() {
                     aria-hidden="true"
                   />
                   <div className="z-10 flex flex-col items-center">
-                    <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+                    <span className="lg:text-xl text-center font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
                       {s.handle}
                     </span>
                     <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 underline">
