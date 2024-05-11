@@ -7,3 +7,11 @@
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
 }
+
+.cursor {
+  pointer-events: none;
+}
+
+.element-2cm-away {
+  pointer-events: none;
+}
