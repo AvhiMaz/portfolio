@@ -18,7 +18,6 @@ const Cursor: React.FC = () => {
       updateElementPosition(e.clientX, e.clientY);
     };
 
-    // Set initial position of the 2cm-away element
     updateElementPosition(mouseX, mouseY);
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -29,8 +28,7 @@ const Cursor: React.FC = () => {
   }, [mouseX, mouseY]);
 
   const updateElementPosition = (cursorX: number, cursorY: number) => {
-    // Calculate position 2 centimeters away from the cursor
-    const distanceInPixels = 2 * window.devicePixelRatio; // Convert centimeters to pixels
+    const distanceInPixels = 2 * window.devicePixelRatio;
     const angle = Math.atan2(
       cursorY - window.innerHeight / 2,
       cursorX - window.innerWidth / 2,
@@ -42,7 +40,7 @@ const Cursor: React.FC = () => {
 
   return (
     <div>
-      <div className="cursor fixed bg-white w-4 h-4 rounded-full z-50"></div>
+      <div className="cursor fixed border border-white w-14 h-14 rounded-full z-50"></div>
       <div className="element-2cm-away fixed bg-red w-4 h-4 rounded-full z-50"></div>
     </div>
   );
