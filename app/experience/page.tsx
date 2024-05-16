@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const socials = [
   {
+    href: "",
+    label: "Apr 2024 - Present",
+    handle: "Co-Founder / CTO @fitnesspergram",
+    des: "Led design and implementation of FitnessPerGram's secure, scalable platform, integrating user feedback. Collaborated company-wide to align tech with business goals, enhancing efficiency.",
+    skills: "Leadership, Communication, Teamwork",
+  },
+  {
     href: "https://owasp.org/www-chapter-itanagar/",
     label: "Nov 2023 - Present",
     handle: "Lead @OWASP",
@@ -54,45 +61,48 @@ const socials = [
 
 export default function Example() {
   return (
-    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-      <Navigation />
-      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
-          {socials.map((s) => (
-            <Card>
-              <Link
-                href={s.href}
-                target="_blank"
-                className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
-              >
-                <span
-                  className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
-                  aria-hidden="true"
-                />
-                <div className="z-10 flex flex-col items-center">
-                  <span className="lg:text-xl text-center font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
-                    {s.handle}
-                  </span>
-
-                  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                    {s.label}{" "}
-                  </span>
+    <>
+      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+        <Navigation />
+        <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+          <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
+            {socials.map((s) => (
+              <Card>
+                <Link
+                  href={s.href}
+                  target="_blank"
+                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+                >
+                  <span
+                    className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
+                    aria-hidden="true"
+                  />
                   <div className="z-10 flex flex-col items-center">
-                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 underline">
-                      Skills: {s.skills}
+                    <span className="lg:text-xl text-center font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+                      {s.handle}
+                    </span>
+
+                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                      {s.label}{" "}
+                    </span>
+                    <div className="z-10 flex flex-col items-center">
+                      <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 underline">
+                        Skills: {s.skills}
+                      </span>
+                    </div>
+
+                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                      {s.des}
                     </span>
                   </div>
+                </Link>
+              </Card>
+            ))}
 
-                  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                    {s.des}
-                  </span>
-                </div>
-              </Link>
-            </Card>
-          ))}
-          <div className="text-white mb-1"></div>
+            <div className="text-white mb-1"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
