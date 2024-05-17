@@ -52,6 +52,17 @@ export default function Example() {
     <>
       <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
         <Navigation />
+        <div className="lg:mx-0 px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl ml-0 lg:ml-[170px] md:ml-0">
+            Let us get in touch
+          </h2>
+          <p className="mt-4 text-zinc-400 ml-0 lg:ml-[170px] md:ml-0">
+            {" "}
+            Follow me :)
+          </p>
+        </div>
+        <div className="w-full mt-10 h-px bg-zinc-800" />
+
         <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
           <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
             {socials.map((s) => (
