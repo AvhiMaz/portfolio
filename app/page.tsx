@@ -6,7 +6,7 @@ import Cursor from "./components/Cursor";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Blogs", href: "/blogs" },
-  { name: "Experience", href: "/experience" },
+  { name: "Experiences", href: "/experience" },
 ];
 
 export default function Home() {
