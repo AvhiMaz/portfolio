@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: "Experiences",
@@ -165,6 +166,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </>
   );
 }
