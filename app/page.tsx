@@ -46,13 +46,12 @@ export default function Home() {
           </h2>
         </div>
         <div className="text-sm flex items-center justify-center text-center h-20 w-72 lg:w-[1000px] text-zinc-500 mx-10 border border-zinc-800">
-          <p>
-            For collaboration or project opportunities{" "}
-            <Link className="underline" href="/contact">
-              DM me to connect
+          <div>
+            <p>For collaboration or project opportunities </p>
+            <Link className="underline grid" href="/contact">
+              DM me to connect.
             </Link>
-            .
-          </p>
+          </div>
         </div>
       </div>
     </>
