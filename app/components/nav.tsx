@@ -50,7 +50,7 @@ export const Navigation: React.FC = () => {
 
           <Link
             href="/"
-            className="duration-200 text-zinc-300 hover:text-zinc-100"
+            className="duration-200 text-zinc-400 hover:text-zinc-100"
           >
             <ChevronLeft className="w-5 h-5 " />
           </Link>

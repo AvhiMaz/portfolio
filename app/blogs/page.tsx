@@ -40,7 +40,7 @@ export default function Example() {
           </h2>
           <p className="mt-4 text-zinc-400 ml-0 lg:ml-[170px] md:ml-0">
             Some of my blog posts posted on{" "}
-            <Link className="underline" href="https://hashnode.com/@AvhiMaz">
+            <Link className="underline duration-200 text-zinc-400 hover:text-zinc-100" href="https://hashnode.com/@AvhiMaz">
               Hashnode
             </Link>{" "}
           </p>

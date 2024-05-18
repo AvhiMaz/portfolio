@@ -45,10 +45,10 @@ export default function Home() {
             with creativity and precision.
           </h2>
         </div>
-        <div className="text-sm flex items-center justify-center text-center h-20 w-72 lg:w-[1000px] text-zinc-500 mx-10 border border-zinc-800">
+        <div className="text-sm flex items-center justify-center text-center h-20 w-72 lg:w-[1000px] text-zinc-400 mx-10 border border-zinc-800">
           <div>
             <p>For collaboration or project opportunities </p>
-            <Link className="underline grid" href="/contact">
+            <Link className="underline grid duration-200 text-zinc-400 hover:text-zinc-100" href="/contact">
               DM me to connect.
             </Link>
           </div>
