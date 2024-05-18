@@ -98,6 +98,7 @@ export default function Example() {
             <div className="text-white mb-1"></div>
           </div>
         </div>
+        <div className="w-full lg:mt-10 h-px bg-zinc-800" />
       </div>
       <ScrollToTopButton />
     </>
