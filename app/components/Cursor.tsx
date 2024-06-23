@@ -6,10 +6,24 @@ import gsap from "gsap";
 const Cursor: React.FC = () => {
   const [mouseX, setMouseX] = useState<number>(0);
   const [mouseY, setMouseY] = useState<number>(0);
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
 
-  const isLargeScreen = () => window.innerWidth >= 1024;
   useEffect(() => {
-    if (!isLargeScreen()) return;
+    const checkScreenSize = () => setIsLargeScreen(window.innerWidth >= 1024);
+
+    // Initial check
+    checkScreenSize();
+
+    // Add resize event listener
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isLargeScreen) return;
 
     gsap.set(".cursor", { xPercent: -50, yPercent: -50 });
 
@@ -28,7 +42,7 @@ const Cursor: React.FC = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [mouseX, mouseY]);
+  }, [isLargeScreen, mouseX, mouseY]);
 
   const updateElementPosition = (cursorX: number, cursorY: number) => {
     const distanceInPixels = 2 * window.devicePixelRatio;
@@ -41,14 +55,12 @@ const Cursor: React.FC = () => {
     gsap.to(".element-2cm-away", { duration: 0.9, x, y });
   };
 
+  if (!isLargeScreen) return null;
+
   return (
     <div>
-      {isLargeScreen() && (
-        <>
-          <div className="cursor fixed border border-white w-14 h-14 rounded-full z-50"></div>
-          <div className="element-2cm-away fixed bg-red w-4 h-4 rounded-full z-50"></div>
-        </>
-      )}
+      <div className="cursor fixed border border-white w-14 h-14 rounded-full z-50"></div>
+      <div className="element-2cm-away fixed bg-red w-4 h-4 rounded-full z-50"></div>
     </div>
   );
 };
