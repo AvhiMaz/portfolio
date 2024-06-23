@@ -4,6 +4,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import FooterText from "../components/footer";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -65,7 +66,7 @@ export default function Example() {
         <div className="w-full mt-10 h-px bg-zinc-800" />
 
         <div className="container flex items-center justify-center px-4 mx-auto">
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
+          <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
             {socials.map((s) => (
               <Card>
                 <Link
@@ -91,6 +92,9 @@ export default function Example() {
                 </Link>
               </Card>
             ))}
+            <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center">
+              <FooterText />
+            </div>
             <div className="text-white mb-1"></div>
           </div>
         </div>

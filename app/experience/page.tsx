@@ -3,6 +3,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import FooterText from "../components/footer";
 
 export const metadata: Metadata = {
   title: "Experiences",
@@ -81,7 +82,7 @@ export default function Example() {
           </div>
           <div className="w-full mt-10 h-px bg-zinc-800" />
           <div className="container flex items-center justify-center px-4 mx-auto">
-            <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
+            <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
               {experience.map((s) => (
                 <Card>
                   <Link
@@ -116,7 +117,7 @@ export default function Example() {
               ))}
             </div>
           </div>
-          <div className="lg:mx-0 px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+          <div className="lg:mx-0 px-6 pt-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-20">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl ml-0 lg:ml-[170px] md:ml-0">
               Certifications
             </h2>
@@ -127,7 +128,7 @@ export default function Example() {
           </div>
           <div className="w-full mt-10 h-px bg-zinc-800" />
           <div className="container flex items-center justify-center px-4 mx-auto">
-            <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-20 sm:grid-cols-3 lg:gap-16">
+            <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
               {certificates.map((s) => (
                 <Card>
                   <Link
@@ -160,10 +161,13 @@ export default function Example() {
                   </Link>
                 </Card>
               ))}
-
+              <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center">
+                <FooterText />
+              </div>
               <div className="text-white mb-1"></div>
             </div>
           </div>
+          <div className="w-full lg:mt-10 h-px bg-zinc-800" />
         </div>
       </div>
       <ScrollToTopButton />

@@ -32,7 +32,7 @@ export default function ScrollToTopButton() {
     <button
       type="button"
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 p-4 rounded-full bg-zinc-500 text-white shadow-2xl duration-200 hover:bg-zinc-600 transition-opacity${
+      className={`fixed bottom-8 right-8 p-4 rounded-full bg-zinc-500 text-white shadow-2xl duration-200 hover:bg-zinc-600 transition-opacity ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       style={{
