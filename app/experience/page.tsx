@@ -19,7 +19,7 @@ const experience = [
   },
   {
     href: "https://owasp.org/www-chapter-itanagar/",
-    label: "Nov 2023 - Present",
+    label: "Nov 2023 - Jun 2024",
     handle: "Lead @OWASP",
     des: "Led the OWASP (Open Web Application Security Project) local chapter, orchestrating efforts to advance cybersecurity awareness and practices within the community.",
     skills: "Leadership, Communication, Teamwork, Cybersecurity",
