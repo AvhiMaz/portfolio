@@ -3,7 +3,6 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import FooterText from "../components/footer";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -97,7 +96,6 @@ export default function Example() {
               </Card>
             ))}
             <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center">
-              <FooterText />
             </div>
 
             <div className="text-white mb-1"></div>
