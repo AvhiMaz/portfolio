@@ -13,7 +13,7 @@ const socials = [
     href: "https://viralxpost.xyz/",
     label: "MERN",
     handle: "viralxpost",
-    des: "Introducing viralxpost: Let out AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
+    des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
   },
   {
     href: "https://www.avhimaz.in/",
