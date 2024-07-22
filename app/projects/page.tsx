@@ -74,8 +74,8 @@ export default function Example() {
           </p>
         </div>
         <div className="w-full mt-10 h-px bg-zinc-800" />
-        <div className="container flex items-center justify-center min-h-screen px-4 mx-auto ">
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
+        <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+          <div className="grid w-full md:grid-cols-4 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
             {socials.map((s) => (
               <Card>
                 <Link
