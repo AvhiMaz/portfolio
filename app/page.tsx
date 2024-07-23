@@ -41,15 +41,17 @@ export default function Home() {
         </h1>
         <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
           Co-founder{" "}
-          <Link href="https://viralxpost.xyz">
+          <Link href="https://viralxpost.xyz" target="_">
             <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
               @viralxpost
             </span>{" "}
           </Link>
           +{" "}
+          <Link href="">
           <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
             @fitnesspergram
           </span>
+          </Link>
         </p>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <Footer />
