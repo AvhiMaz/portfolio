@@ -28,34 +28,10 @@ const socials = [
     des: "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
   },
   {
-    href: "https://fitnesspergram.store/",
-    label: "Next.js, Tailwind, TypeScript",
-    handle: "Fitnesspergram",
-    des: "FitnessPerGram's startup website: your destination for healthy food delivery. Discover our nutritious and delicious meals, crafted to support your fitness journey, all conveniently delivered to your doorstep.",
-  },
-  {
-    href: "https://links-junction.vercel.app/",
-    label: "React.js, Tailwind, JavaScript",
-    handle: "Link Junction",
-    des: "LinkTree-inspired project: A minimalist solution for sharing multiple links effortlessly. Simplify your online presence and make navigation a breeze for your audience.",
-  },
-  {
     href: "https://github.com/AvhiMaz/brew-setup",
     label: "Bash Scripting",
     handle: "Brew Setup Installer",
     des: "The brew-setup.sh script is designed to detect the Linux distribution type (Arch-based, Debian-based) and execute the appropriate commands for installing Homebrew.",
-  },
-  {
-    href: "https://github.com/AvhiMaz/Weather-App",
-    label: "HTML, CSS, JavaScript, APIs",
-    handle: "Weather App",
-    des: "A website using HTML, CSS, JavaScript that fetches weather data from an API and displays the current weather conditions.",
-  },
-  {
-    href: "https://github.com/AvhiMaz/password-generator-using-bash",
-    label: "Bash Scripting",
-    handle: "Password Generator",
-    des: "A Bash script which is designed to generates a random alphanumeric password of a specified length.",
   },
 ];
 

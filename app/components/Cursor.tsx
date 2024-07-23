@@ -4,21 +4,20 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 
 const Cursor: React.FC = () => {
-  const [mouseX, setMouseX] = useState<number>(0);
-  const [mouseY, setMouseY] = useState<number>(0);
-  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    const checkScreenSize = () => setIsLargeScreen(window.innerWidth >= 1024);
+    const updateScreenSize = () => setIsLargeScreen(window.innerWidth >= 1024);
 
-    // Initial check
-    checkScreenSize();
+    // Initial screen size check
+    updateScreenSize();
 
-    // Add resize event listener
-    window.addEventListener("resize", checkScreenSize);
+    // Resize event listener
+    window.addEventListener("resize", updateScreenSize);
 
     return () => {
-      window.removeEventListener("resize", checkScreenSize);
+      window.removeEventListener("resize", updateScreenSize);
     };
   }, []);
 
@@ -27,41 +26,41 @@ const Cursor: React.FC = () => {
 
     gsap.set(".cursor", { xPercent: -50, yPercent: -50 });
 
-    const handleMouseMove = (e: MouseEvent) => {
-      setMouseX(e.clientX);
-      setMouseY(e.clientY);
-      gsap.to(".cursor", { duration: 0.9, x: e.clientX, y: e.clientY });
-
-      updateElementPosition(e.clientX, e.clientY);
+    const handleMouseMove = (event: MouseEvent) => {
+      const { clientX, clientY } = event;
+      setMousePosition({ x: clientX, y: clientY });
+      gsap.to(".cursor", { duration: 0.9, x: clientX, y: clientY });
+      updateElementPosition(clientX, clientY);
     };
 
-    updateElementPosition(mouseX, mouseY);
+    const { x, y } = mousePosition;
+    updateElementPosition(x, y);
 
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [isLargeScreen, mouseX, mouseY]);
+  }, [isLargeScreen, mousePosition]);
 
-  const updateElementPosition = (cursorX: number, cursorY: number) => {
+  const updateElementPosition = (x: number, y: number) => {
     const distanceInPixels = 2 * window.devicePixelRatio;
     const angle = Math.atan2(
-      cursorY - window.innerHeight / 2,
-      cursorX - window.innerWidth / 2
+      y - window.innerHeight / 2,
+      x - window.innerWidth / 2
     );
-    const x = cursorX + Math.cos(angle) * distanceInPixels;
-    const y = cursorY + Math.sin(angle) * distanceInPixels;
-    gsap.to(".element-2cm-away", { duration: 0.9, x, y });
+    const offsetX = x + Math.cos(angle) * distanceInPixels;
+    const offsetY = y + Math.sin(angle) * distanceInPixels;
+    gsap.to(".element-2cm-away", { duration: 0.9, x: offsetX, y: offsetY });
   };
 
   if (!isLargeScreen) return null;
 
   return (
-    <div>
+    <>
       <div className="cursor fixed border border-white w-14 h-14 rounded-full z-50"></div>
       <div className="element-2cm-away fixed bg-red w-4 h-4 rounded-full z-50"></div>
-    </div>
+    </>
   );
 };
 

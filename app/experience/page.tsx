@@ -10,18 +10,19 @@ export const metadata: Metadata = {
 
 const experience = [
   {
+    href: "https://viralxpost.xyz/",
+    label: "Jul 2024 - Present",
+    handle: "Cofounder @viralxpost",
+    des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
+    skills:
+      "MERN, AI integration, API, Leadership, Communication, Teamwork, Cybersecurity",
+  },
+  {
     href: "",
     label: "Apr 2024 - Present",
     handle: "Co-Founder / CTO @fitnesspergram",
     des: "Led design and implementation of FitnessPerGram's secure, scalable platform, integrating user feedback. Collaborated company-wide to align tech with business goals, enhancing efficiency.",
     skills: "Leadership, Communication, Teamwork",
-  },
-  {
-    href: "https://owasp.org/www-chapter-itanagar/",
-    label: "Nov 2023 - Jun 2024",
-    handle: "Lead @OWASP",
-    des: "Led the OWASP (Open Web Application Security Project) local chapter, orchestrating efforts to advance cybersecurity awareness and practices within the community.",
-    skills: "Leadership, Communication, Teamwork, Cybersecurity",
   },
   {
     href: "https://github.com/argoproj/argo-cd/pull/15059",
@@ -160,8 +161,7 @@ export default function Example() {
                   </Link>
                 </Card>
               ))}
-              <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center">
-              </div>
+              <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center"></div>
               <div className="text-white mb-1"></div>
             </div>
           </div>
