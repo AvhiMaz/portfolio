@@ -21,7 +21,7 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+                className="text-sm md:text-xl lg:text-xl duration-500 text-zinc-500 hover:text-zinc-300"
               >
                 {item.name}
               </Link>
@@ -33,11 +33,13 @@ export default function Home() {
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
         />
-        <span className="text-sm text-zinc-500 mb-4">Hi I'm</span>
+        <span className=" text-zinc-500 mb-4 text-sm md:text-xl lg:text-xl">
+          Hi I'm
+        </span>
         <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl whitespace-nowrap bg-clip-text ">
           Avhi Mazumder
         </h1>
-        <p className="text-zinc-500 text-sm mt-5">
+        <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
           Co-founder{" "}
           <Link href="https://viralxpost.xyz">
             <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
@@ -50,9 +52,8 @@ export default function Home() {
           </span>
         </p>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-          <Footer />
-        <div className="my-5 mx-4 text-center animate-fade-in">
-        </div>
+        <Footer />
+        <div className="my-5 mx-4 text-center animate-fade-in"></div>
       </div>
     </>
   );
