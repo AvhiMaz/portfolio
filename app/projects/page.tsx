@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const socials = [
   {
     href: "https://viralxpost.xyz/",
-    label: "MERN",
+    label: "React, Node.js, TypeScript, MongoDB, Tailwind, AI integration, API",
     handle: "viralxpost",
     des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
   },

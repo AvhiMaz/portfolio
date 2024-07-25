@@ -15,7 +15,7 @@ const experience = [
     handle: "Cofounder @viralxpost",
     des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
     skills:
-      "MERN, AI integration, API, Leadership, Communication, Teamwork, Cybersecurity",
+      "React, Node.js, TypeScript, MongoDB, Tailwind, AI integration, API, Leadership, Communication, Teamwork, Cybersecurity",
   },
   {
     href: "",
