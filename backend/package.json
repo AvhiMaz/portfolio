@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon"
+    "start": "nodemon server.ts",
+    "build": "tsc",
+    "docker:publish": "docker build -t avhimazumder/portfolio-backend:v1 --platform linux/amd64 . && docker push avhimazumder/portfolio-backend:v1"
   },
   "keywords": [],
   "author": "",
