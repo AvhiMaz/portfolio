@@ -11,9 +11,13 @@ frontend/node_modules
 # testing
 /coverage
 
-# next.js
-/.next/
+# Next.js
 /out/
+.next/
+
+
+# VS Code
+.vscode/
 
 # production
 /build
@@ -43,6 +47,3 @@ next-env.d.ts
 
 .env.local
 .env
-
-.next
-.vscode
