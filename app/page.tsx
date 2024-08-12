@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Particles from "./components/particles";
 import Cursor from "./components/Cursor";
 import Footer from "./components/footer";
@@ -11,6 +13,18 @@ const navigation = [
 ];
 
 export default function Home() {
+  const [count, setCount] = useState<number>(0);
+
+  useEffect(() => {
+    const fetchCounter = async () => {
+      const res = await fetch("/api/viewcount");
+      const data = await res.json();
+      setCount(data.count);
+    };
+
+    fetchCounter();
+  }, []);
+
   return (
     <>
       <Cursor />
@@ -48,13 +62,17 @@ export default function Home() {
           </Link>
           +{" "}
           <Link href="">
-          <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
-            @fitnesspergram
-          </span>
+            <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
+              @fitnesspergram
+            </span>
           </Link>
         </p>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <Footer />
+        <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
+          Profile views: {count}
+        </p>
+
         <div className="my-5 mx-4 text-center animate-fade-in"></div>
       </div>
     </>
