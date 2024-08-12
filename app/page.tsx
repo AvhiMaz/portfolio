@@ -13,16 +13,20 @@ const navigation = [
 ];
 
 export default function Home() {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    const fetchCounter = async () => {
-      const res = await fetch("/api/viewcount");
-      const data = await res.json();
-      setCount(data.count);
+    const updateCounter = async () => {
+      try {
+        const response = await fetch("/api/viewcount");
+        const data = await response.json();
+        setCount(data.count);
+      } catch (error) {
+        console.error("Error fetching counter:", error);
+      }
     };
 
-    fetchCounter();
+    updateCounter();
   }, []);
 
   return (

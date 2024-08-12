@@ -6,13 +6,16 @@ export async function GET() {
   await dbConnect();
 
   try {
+    console.log("Request received");
+    console.log("Attempting to update counter");
+
     const counter = await Counter.findOneAndUpdate(
       { page: "profile" },
       { $inc: { count: 1 } },
       { new: true, upsert: true }
     );
 
-    console.log("Updated counter:", counter?.count); // Add logging
+    console.log("Counter updated:", counter);
 
     return NextResponse.json({ count: counter?.count || 0 });
   } catch (error) {
