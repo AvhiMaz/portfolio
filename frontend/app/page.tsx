@@ -18,7 +18,9 @@ export default function Home() {
   useEffect(() => {
     const updateCounter = async () => {
       try {
-        const response = await fetch("http://localhost:5513/api/viewcount");
+        const response = await fetch(
+          "https://portfolio-xerl.onrender.com/api/viewcount"
+        );
         const data = await response.json();
         setCount(data.count);
       } catch (error) {
