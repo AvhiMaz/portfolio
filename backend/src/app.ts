@@ -15,7 +15,7 @@ app.use("/api", counterRoutes);
 
 app.use(globalErrorHandler);
 
-const url = config.backendUrl as string;
+const url = "https://portfolio-xerl.onrender.com";
 const interval = 30000;
 
 function reloadWebsite() {
