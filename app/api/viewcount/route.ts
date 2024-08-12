@@ -6,14 +6,14 @@ export async function GET() {
   await dbConnect();
 
   try {
-    // Find and update the counter, incrementing the count by 1
     const counter = await Counter.findOneAndUpdate(
       { page: "profile" },
       { $inc: { count: 1 } },
-      { new: true, upsert: true } // `new: true` returns the updated document
+      { new: true, upsert: true }
     );
 
-    // Respond with the updated counter value
+    console.log("Updated counter:", counter?.count); // Add logging
+
     return NextResponse.json({ count: counter?.count || 0 });
   } catch (error) {
     console.error("Error updating counter:", error);
