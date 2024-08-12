@@ -23,6 +23,7 @@
     "gsap": "^3.12.5",
     "lucide-react": "^0.284.0",
     "markdown-wasm": "^1.2.0",
+    "mongoose": "^8.5.2",
     "next": "^13.5.4",
     "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
