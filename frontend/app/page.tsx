@@ -14,6 +14,7 @@ const navigation = [
 
 export default function Home() {
   const [count, setCount] = useState<number | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const updateCounter = async () => {
@@ -25,6 +26,8 @@ export default function Home() {
         setCount(data.count);
       } catch (error) {
         console.error("Error fetching counter:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -70,7 +73,7 @@ export default function Home() {
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <Footer />
         <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
-          Profile views: {count}
+          Profile views: {loading ? "Loading..." : count}
         </p>
 
         <div className="my-5 mx-4 text-center animate-fade-in"></div>
