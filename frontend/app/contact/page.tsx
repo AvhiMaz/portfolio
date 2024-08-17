@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 const socials = [
   {
     icon: <Twitter size={20} />,
-    href: "https://twitter.com/Avhi_Maz",
+    href: "https://x.com/avhidotsol",
     label: "Twitter",
-    handle: "@Avhi_Maz",
+    handle: "@avhidotsol",
   },
   {
     icon: <Mail size={20} />,
@@ -30,9 +30,9 @@ const socials = [
   },
   {
     icon: <Instagram size={20} />,
-    href: "https://instagram.com/avhi.ai",
+    href: "https://www.instagram.com/avhi.sol/",
     label: "Instagram",
-    handle: "@avhi.ai",
+    handle: "@avhi.sol",
   },
   {
     icon: <Send size={20} />,
@@ -91,8 +91,7 @@ export default function Example() {
                 </Link>
               </Card>
             ))}
-            <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center">
-            </div>
+            <div className="md:col-span-4 lg:col-span-3 flex justify-center items-center"></div>
             <div className="text-white mb-1"></div>
           </div>
         </div>
