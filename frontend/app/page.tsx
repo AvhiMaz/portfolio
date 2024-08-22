@@ -13,26 +13,26 @@ const navigation = [
 ];
 
 export default function Home() {
-  const [count, setCount] = useState<number | null>(null);
-  const [loading, setLoading] = useState(true);
+  // const [count, setCount] = useState<number | null>(null);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const updateCounter = async () => {
-      try {
-        const response = await fetch(
-          "https://portfolio-xerl.onrender.com/api/viewcount"
-        );
-        const data = await response.json();
-        setCount(data.count);
-      } catch (error) {
-        console.error("Error fetching counter:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const updateCounter = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://portfolio-xerl.onrender.com/api/viewcount"
+  //       );
+  //       const data = await response.json();
+  //       setCount(data.count);
+  //     } catch (error) {
+  //       console.error("Error fetching counter:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    updateCounter();
-  }, []);
+  //   updateCounter();
+  // }, []);
 
   return (
     <>
@@ -72,9 +72,9 @@ export default function Home() {
         </p>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <Footer />
-        <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
+        {/* <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
           Profile views: {loading ? "Loading..." : count}
-        </p>
+        </p> */}
 
         <div className="my-5 mx-4 text-center animate-fade-in"></div>
       </div>
