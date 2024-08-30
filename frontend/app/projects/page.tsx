@@ -8,30 +8,34 @@ export const metadata: Metadata = {
   title: "Projects",
 };
 
-const socials = [
+const projects = [
   {
     href: "https://viralxpost.xyz/",
     label: "React, Node.js, TypeScript, MongoDB, Tailwind, AI integration, API",
     handle: "viralxpost",
     des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
+    image: "/image/viralxpost.png",
   },
   {
     href: "https://www.avhimaz.in/",
     label: "Next.js, TypeScript, Tailwind",
     handle: "Portfolio",
     des: "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
+    image: "/image/portfolio.png",
   },
   {
     href: "https://blogs-avhimaz.vercel.app/",
     label: "Next.js, Tailwind, TypeScript, Headless CMS",
     handle: "Blogging App",
     des: "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
+    image: "/image/blog-website.png",
   },
   {
     href: "https://github.com/AvhiMaz/brew-setup",
     label: "Bash Scripting",
     handle: "Brew Setup Installer",
     des: "The brew-setup.sh script is designed to detect the Linux distribution type (Arch-based, Debian-based) and execute the appropriate commands for installing Homebrew.",
+    image: "/image/homebrew.jpg",
   },
 ];
 
@@ -54,8 +58,15 @@ export default function Example() {
           <div className="w-full mt-10 h-px bg-zinc-800" />
           <div className="container flex items-center justify-center px-4 mx-auto">
             <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
-              {socials.map((s) => (
+              {projects.map((s) => (
                 <Card>
+                  <div>
+                    <img
+                      src={s.image}
+                      alt={s.handle}
+                      className="w-full h-auto"
+                    />
+                  </div>
                   <Link
                     href={s.href}
                     target="_blank"
