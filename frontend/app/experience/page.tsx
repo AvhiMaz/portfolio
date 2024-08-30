@@ -3,6 +3,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Experiences",
@@ -16,6 +17,7 @@ const experience = [
     des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
     skills:
       "React, Node.js, TypeScript, MongoDB, Tailwind, AI integration, API, Leadership, Communication, Teamwork, Cybersecurity",
+    image: "/image/viralxpost.png",
   },
   {
     href: "",
@@ -23,6 +25,7 @@ const experience = [
     handle: "Co-Founder / CTO @fitnesspergram",
     des: "Led design and implementation of FitnessPerGram's secure, scalable platform, integrating user feedback. Collaborated company-wide to align tech with business goals, enhancing efficiency.",
     skills: "Leadership, Communication, Teamwork",
+    image: "/image/fitnesspergram.jpg",
   },
   {
     href: "https://github.com/argoproj/argo-cd/pull/15059",
@@ -30,6 +33,7 @@ const experience = [
     handle: "Contribution In CNCF",
     des: "Worked with the CNCF and Argo CD project to make error messages better. This helps people find and fix problems more easily. My work made the project stronger and better at handling errors.",
     skills: "Golang, Docker, Kubernetes, Argo-CD, Linux, Git & Github",
+    image: "/image/cncf.png",
   },
   {
     href: "https://leetcode.com/Avhi_Maz/",
@@ -37,6 +41,7 @@ const experience = [
     handle: "Leetcode",
     des: "Completed 200+ Leetcode questions, significantly enhancing problem-solving abilities and sharpening critical thinking skills.",
     skills: "C++",
+    image: "/image/leetcode.png",
   },
 ];
 
@@ -85,6 +90,18 @@ export default function Example() {
             <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
               {experience.map((s) => (
                 <Card>
+                  <div>
+                    <Link href={s.href}>
+                      <Image
+                        src={s.image ?? ""}
+                        alt={s.handle}
+                        className="w-full h-auto"
+                        width={500}
+                        height={300}
+                      />
+                    </Link>
+                  </div>
+
                   <Link
                     href={s.href}
                     target="_blank"
