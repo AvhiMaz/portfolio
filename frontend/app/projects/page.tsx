@@ -3,6 +3,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Metadata } from "next";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -61,11 +62,15 @@ export default function Example() {
               {projects.map((s) => (
                 <Card>
                   <div>
-                    <img
-                      src={s.image}
-                      alt={s.handle}
-                      className="w-full h-auto"
-                    />
+                    <Link href={s.href}>
+                      <Image
+                        src={s.image}
+                        alt={s.handle}
+                        className="w-full h-auto"
+                        width={500}
+                        height={300}
+                      />
+                    </Link>
                   </div>
                   <Link
                     href={s.href}
