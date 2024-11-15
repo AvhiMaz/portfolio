@@ -11,32 +11,34 @@ export const metadata: Metadata = {
 
 const projects = [
   {
+    href: "https://blinkarena.xyz/",
+    label: "Next.js, TypeScript, MongoDB, Prisma, Solana Blinks",
+    handle: "blinkarena",
+    des: "Introducing blinkarena: a platform where user can either host or join gaming tournament via Solana Blinks",
+  },
+  {
     href: "https://viralxpost.xyz/",
     label: "React, Node.js, TypeScript, MongoDB, Tailwind, AI integration, API",
     handle: "viralxpost",
     des: "Introducing viralxpost: Let our AI tool help you create to engaging content that breaks through the noise and gets you seen by the right people.",
-    image: "/image/viralxpost.png",
   },
   {
     href: "https://www.avhimaz.in/",
     label: "Next.js, TypeScript, Tailwind",
     handle: "Portfolio",
     des: "Introducing my portfolio: a showcase of my skills, projects, and experiences. Explore my work and learn more about me through this curated collection of my achievements and endeavors.",
-    image: "/image/portfolio.png",
   },
   {
     href: "https://blogs-avhimaz.vercel.app/",
     label: "Next.js, Tailwind, TypeScript, Headless CMS",
     handle: "Blogging App",
     des: "A blogging app: built with Next.js and Hashnode's headless CMS for seamless content management and dynamic frontend. It's the perfect platform for bloggers to share their thoughts effortlessly.",
-    image: "/image/blog-website.png",
   },
   {
     href: "https://github.com/AvhiMaz/brew-setup",
     label: "Bash Scripting",
     handle: "Brew Setup Installer",
     des: "The brew-setup.sh script is designed to detect the Linux distribution type (Arch-based, Debian-based) and execute the appropriate commands for installing Homebrew.",
-    image: "/image/homebrew.jpg",
   },
 ];
 
@@ -52,7 +54,7 @@ export default function Example() {
             </h2>
             <p className="mt-4 text-zinc-400 ml-0 lg:ml-[170px] md:ml-0">
               {" "}
-              Some projecrs are work-related, while others are personal
+              Some projects are work-related, while others are personal
               endeavors pursued in my own time.
             </p>
           </div>
@@ -61,17 +63,6 @@ export default function Example() {
             <div className="grid w-full grid-cols-1 gap-8 mx-auto md:mt-20 mt-10 sm:grid-cols-3 lg:gap-16">
               {projects.map((s) => (
                 <Card>
-                  <div>
-                    <Link href={s.href}>
-                      <Image
-                        src={s.image}
-                        alt={s.handle}
-                        className="w-full h-auto"
-                        width={500}
-                        height={300}
-                      />
-                    </Link>
-                  </div>
                   <Link
                     href={s.href}
                     target="_blank"

@@ -13,27 +13,6 @@ const navigation = [
 ];
 
 export default function Home() {
-  // const [count, setCount] = useState<number | null>(null);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const updateCounter = async () => {
-  //     try {
-  //       const response = await fetch(
-  //         "https://portfolio-xerl.onrender.com/api/viewcount"
-  //       );
-  //       const data = await response.json();
-  //       setCount(data.count);
-  //     } catch (error) {
-  //       console.error("Error fetching counter:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   updateCounter();
-  // }, []);
-
   return (
     <>
       <Cursor />
@@ -62,20 +41,8 @@ export default function Home() {
         <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl whitespace-nowrap bg-clip-text ">
           Avhi Mazumder
         </h1>
-        <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
-          building{" "}
-          <Link href="https://viralxpost.xyz" target="_">
-            <span className="backdrop-blur duration-200 cursor-pointer hover:text-zinc-300">
-              @viralxpost
-            </span>{" "}
-          </Link>
-        </p>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <Footer />
-        {/* <p className="text-zinc-500 text-sm md:text-xl lg:text-xl mt-5">
-          Profile views: {loading ? "Loading..." : count}
-        </p> */}
-
         <div className="my-5 mx-4 text-center animate-fade-in"></div>
       </div>
     </>
